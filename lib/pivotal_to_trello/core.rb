@@ -39,7 +39,8 @@ module PivotalToTrello
         elsif story.current_state == 'unstarted' && story.story_type == 'release'
           list_id = options.release_list_id
         else
-          puts "Ignoring story #{story.id} - type is '#{story.story_type}', state is '#{story.current_state}'"
+          puts "YOLO!!! 😬"
+          list_id = options.current_list_id
         end
 
         if story.story_type == 'bug' && options.bug_label
